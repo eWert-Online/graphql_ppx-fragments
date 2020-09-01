@@ -1,0 +1,22 @@
+type Query {
+  workspace(id: String!): Workspace!
+  workspaceByTitle(title: String!): Workspace!
+}
+
+type Workspace {
+  id: String!
+  title: String!
+  image: String
+  description: String
+  user(id: String!): User!
+}
+
+type User {
+  id: String!
+  firstname: String
+  lastname: String!
+}
+
+schema {
+  query: Query
+}

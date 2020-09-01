@@ -1,0 +1,21 @@
+{
+  "name": "new-project",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world",
+    "start": "bsb -make-world -w"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^14.5.8"
+  },
+  "devDependencies": {
+    "@reasonml-community/graphql-ppx": "1.0.0-beta.22",
+    "bs-platform": "8.2.0"
+  }
+}
