@@ -1,10 +1,9 @@
-module UserData = [%graphql
+module WorkspaceData = [%graphql
   {|
-    fragment UserData on Workspace @argumentDefinitions(userId: {type: "String!"}) {
-      user(id: $userId) {
+    fragment WorkspaceData on Query {
+      workspace(id: "123") {
         id
-        firstname
-        lastname
+        title
       }
     }
   |}

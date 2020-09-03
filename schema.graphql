@@ -1,4 +1,5 @@
 type Query {
+  isLoggedIn: Boolean!
   workspace(id: String!): Workspace!
   workspaceByTitle(title: String!): Workspace!
 }
