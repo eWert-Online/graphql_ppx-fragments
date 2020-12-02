@@ -10,9 +10,20 @@
     "in-source": true
   },
   "suffix": ".bs.js",
-  "bs-dependencies": ["@reasonml-community/graphql-ppx"],
+  "graphql": {
+    "apollo-mode": true,
+    "extend-mutation": "ApolloClient.GraphQL_PPX.ExtendMutation",
+    "extend-query": "ApolloClient.GraphQL_PPX.ExtendQuery",
+    "extend-subscription": "ApolloClient.GraphQL_PPX.ExtendSubscription",
+    "template-tag-return-type": "ApolloClient.GraphQL_PPX.templateTagReturnType",
+    "template-tag-import": "gql",
+    "template-tag-location": "@apollo/client",
+    "custom-fields": {}
+  },
+  "bs-dependencies": ["@reasonml-community/graphql-ppx", "reason-apollo-client"],
   "ppx-flags": ["@reasonml-community/graphql-ppx/ppx"],
   "warnings": {
-    "error": "+101"
+    "number": "+A-42-48",
+    "error": "+A-3-44-102-103"
   }
 }
