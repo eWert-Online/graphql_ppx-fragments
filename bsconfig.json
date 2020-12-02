@@ -24,6 +24,6 @@
   "ppx-flags": ["@reasonml-community/graphql-ppx/ppx"],
   "warnings": {
     "number": "+A-42-48",
-    "error": "+A-3-44-102-103"
+    "error": "+A-3-44-102-103-20"
   }
 }
